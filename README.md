@@ -15,6 +15,7 @@
 ---
 
 ## 📂 โครงสร้างโฟลเดอร์
+```plaintext
 ml-starter/
 ├── configs/
 │ ├── data.yaml
@@ -37,7 +38,7 @@ ml-starter/
 ├── README.md
 ├── pyproject.toml
 └── Makefile
-
+```
 ---
 
 ## 📊 ข้อมูล (Dataset)
@@ -58,21 +59,29 @@ python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\Activate.ps1
 pip install -e .
 pre-commit install
+```
 ---
 
 ### 2) เตรียมข้อมูล
 ดาวน์โหลดไฟล์ processed.cleveland.data จาก UCI แล้ววางไว้ที่:
+```bash
 data/raw/processed.cleveland.data
+```
 ---
 ### 3) ฝึกโมเดล
+```bash
 python -m ml_starter.models.train
-
+```
 ผลลัพธ์จะถูกเก็บที่:
+```bash
 artifacts/model.joblib
 artifacts/metrics.json
+```
 ---
 ### 4) ดูผลลัพธ์
+```bash
 cat artifacts/metrics.json
+```
 ---
 
 ## 📈 ผลลัพธ์ (Baseline)
