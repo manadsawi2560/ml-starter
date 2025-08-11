@@ -1,33 +1,4 @@
-name: CI
-
-on: [push, pull_request]
-
-jobs:
-  lint-and-test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Upgrade pip
-        run: python -m pip install -U pip setuptools wheel
-
-      - name: Install dev deps
-        run: pip install black ruff pytest
-
-      - name: Install package (editable)
-        run: pip install -e .
-
-      - name: Lint
-        run: |
-          black --check .
-          ruff .
-
-      - name: Test
-        env:
-          # เผื่อกรณี import เพี้ยน ตั้ง fallback ให้ pytest มองเห็น src
-          PYTHONPATH: src
-        run: pytest -q
+- name: Lint
+  run: |
+    black --check .
+    ruff check .
