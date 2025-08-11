@@ -97,6 +97,7 @@ F1: 0.79
 Specificity: 0.57
 
 ROC-AUC: 0.95
+
 ---
 ## Plots
 ![ROC](artifacts/plots/roc_curve_test.png)
@@ -120,5 +121,5 @@ ROC-AUC: 0.95
 
 6.Artifacts – เซฟโมเดล + metrics
 
-![CI](https://github.com/<USER>/<REPO>/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/manadsawi2560/ml-starter/actions/workflows/ci.yml/badge.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
