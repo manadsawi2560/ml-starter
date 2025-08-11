@@ -1,0 +1,24 @@
+seed: 42
+paths:
+  artifacts: artifacts/
+  model: artifacts/model.joblib
+  preproc: artifacts/preproc.joblib
+split:
+  test_size: 0.15
+  val_size: 0.15
+  stratify: true
+cv:
+  n_splits: 5
+metrics:
+  primary: [recall, roc_auc]
+  secondary: [precision, f1, pr_auc, specificity]
+model:
+  name: logistic_regression
+  params:
+    penalty: l2
+    solver: lbfgs
+    C: 1.0
+    max_iter: 2000
+threshold:
+  optimize_for: recall
+  min_recall: 0.85

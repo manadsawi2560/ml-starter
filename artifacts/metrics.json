@@ -1,0 +1,12 @@
+{
+  "threshold_method": "f1_optimal",
+  "threshold": 0.16796883400858814,
+  "val": {
+    "recall": 1.0,
+    "roc_auc": 0.9087301587301587
+  },
+  "test": {
+    "recall": 1.0,
+    "roc_auc": 0.9485714285714285
+  }
+}

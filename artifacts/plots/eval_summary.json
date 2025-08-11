@@ -1,0 +1,51 @@
+{
+  "threshold_used": 0.16796883400858814,
+  "val": {
+    "threshold_used": 0.16796883400858814,
+    "precision": 0.7,
+    "recall": 1.0,
+    "f1": 0.8235294117647058,
+    "specificity": 0.6249999999739584,
+    "confusion_matrix": {
+      "tn": 15,
+      "fp": 9,
+      "fn": 0,
+      "tp": 21
+    },
+    "roc_auc": 0.9087301587301587,
+    "pr_auc": 0.9043302973883187
+  },
+  "test": {
+    "threshold_used": 0.16796883400858814,
+    "precision": 0.6176470588235294,
+    "recall": 1.0,
+    "f1": 0.7636363636363637,
+    "specificity": 0.4799999999808,
+    "confusion_matrix": {
+      "tn": 12,
+      "fp": 13,
+      "fn": 0,
+      "tp": 21
+    },
+    "roc_auc": 0.9485714285714285,
+    "pr_auc": 0.9320915453655394
+  },
+  "summary": {
+    "roc_auc": {
+      "val": 0.9087301587301587,
+      "test": 0.9485714285714285
+    },
+    "pr_auc": {
+      "val": 0.9043302973883187,
+      "test": 0.9320915453655394
+    }
+  },
+  "plots": {
+    "roc_val": "artifacts/plots/roc_curve_val.png",
+    "roc_test": "artifacts/plots/roc_curve_test.png",
+    "pr_val": "artifacts/plots/pr_curve_val.png",
+    "pr_test": "artifacts/plots/pr_curve_test.png",
+    "cm_val": "artifacts/plots/confusion_matrix_val.png",
+    "cm_test": "artifacts/plots/confusion_matrix_test.png"
+  }
+}

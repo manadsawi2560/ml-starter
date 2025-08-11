@@ -1,0 +1,11 @@
+dataset:
+  name: uci_heart_cleveland
+  url: https://archive.ics.uci.edu/static/public/45/heart+disease.zip
+  # ใช้ไฟล์ processed.cleveland.data ภายใน zip
+raw:
+  path: data/raw/processed.cleveland.data
+columns: [age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal,num]
+target:
+  name: num
+  positive_when_gt: 0   # num > 0 => 1 else 0
+na_values: ["?"]
